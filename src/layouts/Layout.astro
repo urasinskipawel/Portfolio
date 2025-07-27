@@ -58,6 +58,7 @@ const { title } = Astro.props;
 		--container: #1a1a1a;
 		--line: #333333;
 		--pink: #ff69b4;
+		--blue: #4c4cff;
 	}
 
 	* {
@@ -69,6 +70,8 @@ const { title } = Astro.props;
 		box-sizing: border-box;
 		padding: 0;
 		margin: 0;
+		scrollbar-width: thin;
+		scrollbar-color: var(--line) var(--container);
 	}
 
 	*::selection {
@@ -97,12 +100,61 @@ const { title } = Astro.props;
 	}
 
 	/* Scrollbar styles for Firefox */
-	* {
-		scrollbar-width: thin;
-		scrollbar-color: var(--line) var(--container);
+
+	#home {
+		scroll-margin-top: 80px;
+	}
+	nav {
+		transform: translateX(-50%);
+		background-color: var(--background);
+		transition:
+			background-color 0.3s ease,
+			border-radius 0.3s ease,
+			border-color 0.3s ease;
 	}
 
-	body {
-		color: var(--white); 
+	nav.scrolling {
+		background-color: var(--component-bg);
+		border-color: #ffffff10;
+		border-radius: 9999px;
+	}
+	nav a.active .nav-indicator {
+		transform: translateY(-50%) scale(1);
+		opacity: 1;
+		animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+	}
+	@keyframes pulse {
+		50% {
+			opacity: 0.5;
+		}
+	}
+
+	nav a.active {
+		color: white;
+	}
+
+	@media (max-width: 767px) {
+		nav {
+			width: 100%;
+			transform: translateX(-50%);
+			bottom: 0;
+			left: 50%;
+			position: fixed;
+			border-radius: 1rem 1rem 0 0;
+			border-color: #ffffff10;
+		}
+
+		nav a.active {
+			color: var(--blue);
+		}
+
+		nav.scrolling {
+			border-radius: 1rem 1rem 0 0;
+			background-color: var(--component-bg);
+		}
+
+		body {
+			padding-bottom: 70px;
+		}
 	}
 </style>
