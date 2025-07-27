@@ -11,8 +11,11 @@
 		"paths": {
 			"@/*": ["src/*"],
 			"@components/*": ["src/components/*"],
+			"@constants/*": ["src/constants/*"],
+			"@icons/*": ["src/icons/*"],
 			"@layouts/*": ["src/layouts/*"],
-			"@pages/*": ["src/pages/*"]
+			"@pages/*": ["src/pages/*"],
+			"@types/*": ["src/types/*"]
 		},
 		"jsx": "react-jsx",
 		"jsxImportSource": "react"
