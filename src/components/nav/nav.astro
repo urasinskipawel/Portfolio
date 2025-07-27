@@ -1,0 +1,16 @@
+---
+import { navItems } from '@constants/constants';
+import type { NavItem } from '@/types/types';
+---
+
+<nav>
+	<ul>
+		{
+			navItems.map((item: NavItem) => (
+				<li>
+					{item.label} <item.icon />
+				</li>
+			))
+		}
+	</ul>
+</nav>
