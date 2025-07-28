@@ -18,3 +18,9 @@ export const navItems: NavItem[] = [
 		icon: IconContact,
 	},
 ];
+
+export const socialLinks = {
+	github: 'https://github.com/urasinskipawel',
+	linkedIn: 'https://www.linkedin.com/in/pawel-urasinski',
+	gmail: 'uraspawel@gmail.com',
+};

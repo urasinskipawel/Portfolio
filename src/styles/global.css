@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Tailwind classes */
+
+@layer components {
+	.btn-icon {
+		@apply text-[var(--white-icon)]
+           hover:text-white
+           transition
+           duration-300
+           ease-in-out
+           border
+           border-[var(--white-icon-tr)]
+           p-3
+           rounded-xl
+           bg-[var(--black)]
+           hover:bg-[var(--white-icon-tr)];
+	}
+}
