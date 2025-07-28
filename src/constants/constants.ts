@@ -24,3 +24,19 @@ export const socialLinks = {
 	linkedIn: 'https://www.linkedin.com/in/pawel-urasinski',
 	gmail: 'uraspawel@gmail.com',
 };
+export const technologies = [
+	'astro',
+	'next',
+	'react',
+	'reactNative',
+	'expo',
+	'typeScript',
+	'tailwind',
+	'HTML5',
+	'CSS3',
+	'javaScript',
+	'node',
+	'git',
+	'firebase',
+	'mysql',
+];
