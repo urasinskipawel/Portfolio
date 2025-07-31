@@ -11,5 +11,13 @@ export interface Specialization {
 }
 
 export type ToogleArrowIconProps = {
-  rotate: string; 
+	rotate: string;
 };
+
+export interface LetterGlitchAnimation {
+	glitchColors: string[];
+	glitchSpeed: number;
+	centerVignette: boolean;
+	outerVignette: boolean;
+	smooth: boolean;
+}
