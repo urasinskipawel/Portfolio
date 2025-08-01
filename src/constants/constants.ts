@@ -45,17 +45,21 @@ export const technologies = [
 export const specializations: Specialization[] = [
 	{
 		name: 'Web Development',
-		details: ['Single Page Applications (SPAs)', 'Landing pages and business websites', 'Portfolio websites'],
+		details: ['Single Page Applications', 'Landing pages and business websites', 'Next-gen web apps'],
 		icon: WebIcon,
 	},
 	{
 		name: 'Mobile Development',
-		details: ['Mobile-friendly web apps', 'React Native mobile apps'],
+		details: [
+			'React Native mobile apps',
+			'Maintain and improve clients apps',
+			'Publishing apps (Google Play & Apple App Store)',
+		],
 		icon: MobileIcon,
 	},
 	{
 		name: 'AI & Prototyping',
-		details: ['Prototyping for websites & mobile apps'],
+		details: ['Prototyping for websites & mobile apps', 'Learning AI automation and building agents'],
 		icon: DesignIcon,
 	},
 ];
