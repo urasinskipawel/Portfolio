@@ -7,7 +7,7 @@ import { IconGithub, IconLinkedin, IconMail } from '@/icons/icons';
 ---
 
 <section class='text-[var(--white)] mt-12 md:mt-0' id='home'>
-	<div class='max-w-5xl mx-auto space-y-8 md:py-36 pb-14'>
+	<div class='max-w-5xl mx-auto space-y-8 md:pt-36 pb-12'>
 		<div class='text-left space-y-4'>
 			<p class='text-md md:text-lg text-[var(--white-icon)] shiny-white'>Hi, I'm Paweł Urasiński</p>
 			<div class='flex flex-col lg:flex-row lg:items-center space-y-4 lg:space-y-0 lg:space-x-20 md:gap-4'>
@@ -20,15 +20,13 @@ import { IconGithub, IconLinkedin, IconMail } from '@/icons/icons';
 				</p>
 			</div>
 			<div class='flex justify-start gap-2 pt-3 md:pt-6'>
-				<a target='_blank' href={socialLinks.github} aria-label='GitHub' class='btn-icon'>
-					<IconGithub />
-				</a>
-				<a target='_blank' href={socialLinks.linkedIn} aria-label='LinkedIn' class='btn-icon'>
-					<IconLinkedin />
-				</a>
-				<a target='_blank' href={socialLinks.gmail} aria-label='Email' class='btn-icon'>
-					<IconMail />
-				</a>
+				{
+					socialLinks.map(({ href, icon: Icon, label }) => (
+						<a target='_blank' href={href} aria-label={label} class='btn-icon'>
+							<Icon />
+						</a>
+					))
+				}
 			</div>
 		</div>
 		<TechSlider />

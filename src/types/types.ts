@@ -1,4 +1,4 @@
-export interface NavItem {
+export interface Icon {
 	label: string;
 	href: string;
 	icon: React.FC<React.SVGProps<SVGSVGElement>>;
@@ -10,10 +10,13 @@ export interface Specialization {
 	icon: React.FC<React.SVGProps<SVGSVGElement>>;
 }
 
-export type ToogleArrowIconProps = {
-	rotate: string;
-};
-
+export interface Project {
+	title: string;
+	image: string;
+	link: string;
+	describe: string;
+	technologies: string[];
+}
 export interface LetterGlitchAnimation {
 	glitchColors: string[];
 	glitchSpeed: number;
@@ -21,3 +24,6 @@ export interface LetterGlitchAnimation {
 	outerVignette: boolean;
 	smooth: boolean;
 }
+export type ToogleArrowIconProps = {
+	rotate: string;
+};
