@@ -3,6 +3,11 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
+			colors: {
+				blue: 'var(--blue)',
+				white: 'var(--white)',
+				black: 'var(--black)',
+			},
 			keyframes: {
 				scaleAnim: {
 					'0%': { transform: 'scale(1)' },
