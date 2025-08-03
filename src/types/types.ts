@@ -1,3 +1,5 @@
+import type { FieldErrors } from "react-hook-form";
+
 export interface Icon {
 	label: string;
 	href: string;
@@ -35,6 +37,14 @@ export interface ContactFormInputs {
 	fullName: string;
 	email: string;
 	message: string;
+}
+
+export interface InputProps {
+	placeholder: string;
+	value: string;
+	onChange: () => void;
+	onBlur: () => void;
+	error: FieldErrors<FormData>;
 }
 type RotateType = 'open' | 'closed';
 
