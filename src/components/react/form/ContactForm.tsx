@@ -30,7 +30,7 @@ export const ContactForm = () => {
 					<h2 className='text-center text-3xl md:text-4xl font-medium text-[var(--white)]'>Thank you for your message</h2>
 				)}
 				{!isSubmitted && (
-					<form className='flex flex-col' onSubmit={handleSubmit(onSubmit)}>
+					<form className='flex flex-col max-w-md ' onSubmit={handleSubmit(onSubmit)}>
 						<div className='flex flex-col gap-5'>
 							<div className='w-full max-w-md mx-auto'>
 								<Controller
@@ -81,7 +81,7 @@ export const ContactForm = () => {
 								/>
 							</div>
 						</div>
-						<div className='flex flex-row-reverse justify-center lg:justify-start gap-6 lg:order-4 pt-6'>
+						<div className='flex flex-row-reverse justify-center lg:justify-start gap-6 lg:order-4 pt-6 max-w-lg'>
 							<button type='submit' className='w-32 rounded bg-[var(--blue)] text-white hover:bg-[#3a3ad6]'>
 								Submit
 							</button>
