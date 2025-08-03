@@ -30,6 +30,14 @@ export interface FooterDetail {
 	icon: string;
 	alt: string;
 }
-export type ToogleArrowIconProps = {
-	rotate: string;
-};
+
+export interface ContactFormInputs {
+	fullName: string;
+	email: string;
+	message: string;
+}
+type RotateType = 'open' | 'closed';
+
+export interface ToogleArrowIconProps {
+	rotate?: RotateType;
+}

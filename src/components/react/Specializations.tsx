@@ -24,7 +24,7 @@ export const Specializations = () => {
 									<div className='min-w-0 max-w-[200px] md:max-w-none overflow-hidden'>
 										<span className='block truncate text-[var(--white)] text-lg'>{specialization.name}</span>
 									</div>
-									<ToogleArrowIcon rotate={openItem === specialization.name ? 'rotate-180' : ''} />
+									<ToogleArrowIcon rotate={openItem === specialization.name ? 'open' : 'closed'} />
 								</div>
 							</div>
 							<div

@@ -69,12 +69,16 @@ export const DesignIcon: FC = () => (
 	</svg>
 );
 
-export const ToogleArrowIcon: FC<ToogleArrowIconProps> = ({ rotate }) => (
-	<svg
-		xmlns='http://www.w3.org/2000/svg'
-		viewBox='0 0 24 24'
-		fill='currentColor'
-		className={`w-6 h-6 text-[var(--white)] transform transition-transform flex-shrink-0 ${rotate}`}>
-		<path d='M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z'></path>
-	</svg>
-);
+export const ToogleArrowIcon = ({ rotate = 'closed' }: { rotate?: 'open' | 'closed' }) => {
+  const rotateClass = rotate === 'open' ? 'rotate-180' : 'rotate-0';
+
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      viewBox='0 0 24 24'
+      fill='currentColor'
+      className={`w-6 h-6 text-[var(--white)] transform transition-transform flex-shrink-0 ${rotateClass}`}>
+      <path d='M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z'></path>
+    </svg>
+  );
+};
