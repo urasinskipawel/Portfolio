@@ -24,6 +24,12 @@ export interface LetterGlitchAnimation {
 	outerVignette: boolean;
 	smooth: boolean;
 }
+export interface FooterDetail {
+	desc: string;
+	name: string;
+	icon: string;
+	alt: string;
+}
 export type ToogleArrowIconProps = {
 	rotate: string;
 };

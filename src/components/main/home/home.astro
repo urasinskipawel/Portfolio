@@ -3,7 +3,6 @@ import { LetterGlitch } from '@/components/react/LetterGlitch';
 import { Specializations } from '@/components/react/Specializations';
 import TechSlider from '@/components/ui/techSlider.astro';
 import { socialLinks } from '@/constants/constants';
-import { IconGithub, IconLinkedin, IconMail } from '@/icons/icons';
 ---
 
 <section class='text-[var(--white)] mt-12 md:mt-0' id='home'>
@@ -30,9 +29,9 @@ import { IconGithub, IconLinkedin, IconMail } from '@/icons/icons';
 			</div>
 		</div>
 		<TechSlider />
-		<div class='flex flex-col lg:flex-row items-end gap-8'>
+		<div class='flex flex-col items-center lg:flex-row lg:items-end gap-8'>
 			<Specializations client:load />
-			<div class='flex justify-center md:w-full md:h-[292px] size-[290px] pt-3 md:ml-16'>
+			<div class='flex items-center justify-center h-[290px] w-full md:h-[292px] pt-4 lg:ml-16'>
 				<LetterGlitch
 					client:load
 					glitchColors={['#4c4cff', '#7462ff', '#1a1a66']}

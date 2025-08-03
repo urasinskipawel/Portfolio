@@ -1,1 +1,36 @@
-<footer>Stopka</footer>
+---
+import { footerDetails, socialLinks } from '@/constants/constants';
+---
+
+<footer class='w-full py-12 border-t border-[var(--line)]'>
+	<div class='max-w-5xl mx-auto'>
+		<div class='flex flex-col justify-between gap-10 md:flex-row md:justify-around lg:gap-10'>
+			<div class='flex flex-col lg:items-start items-center space-y-6 gap-9'>
+				<div class='flex space-x-6 sm:space-x-8'>
+					{
+						socialLinks.map(({ href, icon: Icon, label }) => (
+							<a href={href} target='_blank' class='flex flex-col items-center group' aria-label={label}>
+								<div class='text-[var(--white-icon)] hover:text-[var(--white)] transition duration-300 ease-in-out'>
+									<Icon />
+								</div>
+							</a>
+						))
+					}
+				</div>
+			</div>
+			<div class='flex flex-col items-center space-y-6'>
+				<div class='grid grid-cols-1 gap-3 w-full max-w-xs'>
+					{
+						footerDetails.map(({ desc, name, icon, alt }) => (
+							<div class='flex items-center justify-center lg:justify-normal space-x-3'>
+								<span class='text-[var(--white-icon)] text-sm'>{desc}</span>
+								<img src={icon} alt={alt} class='h-5 w-5 object-contain filter brightness-0 invert opacity-50' loading='lazy' />
+								<span class='text-[var(--white-icon)] text-sm'>{name}</span>
+							</div>
+						))
+					}
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

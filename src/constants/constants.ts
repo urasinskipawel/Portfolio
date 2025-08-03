@@ -1,4 +1,4 @@
-import type { Project, Specialization, Icon } from '@/types/types';
+import type { Project, Specialization, Icon, FooterDetail } from '@/types/types';
 import {
 	DesignIcon,
 	IconContact,
@@ -121,4 +121,25 @@ export const projects: Project[] = [
 	// 	describe: 'https://tron-legacy-web.vercel.app/',
 	// 	technologies: ['test'],
 	// },
+];
+
+export const footerDetails: FooterDetail[] = [
+	{
+		desc: 'Built with',
+		name: 'Astro',
+		icon: '/svg/astro.svg',
+		alt: 'Astro Logo',
+	},
+	{
+		desc: 'Styled with',
+		name: 'TailwindCSS',
+		icon: '/svg/tailwind.svg',
+		alt: 'TailwindCSS Logo',
+	},
+	{
+		desc: 'Deployed on',
+		name: 'Vercel',
+		icon: '/svg/vercel.svg',
+		alt: 'Vercel Logo',
+	},
 ];
