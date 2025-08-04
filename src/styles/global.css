@@ -16,6 +16,11 @@
            p-3
            rounded-xl
            bg-[var(--black)]
-           hover:bg-[var(--white-icon-tr)];
+           hover:bg-[var(--white-icon-tr)]
+           focus:outline-none
+           focus:ring-0;
+	}
+	.input-field {
+		@apply bg-[var(--black)] block w-full max-w-lg rounded-lg border-2 px-4 py-4 text-sm text-[var(--white)] focus:outline-none focus:ring-2 focus:ring-[var(--blue)] resize-none;
 	}
 }

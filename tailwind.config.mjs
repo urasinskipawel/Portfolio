@@ -5,8 +5,9 @@ export default {
 		extend: {
 			colors: {
 				blue: 'var(--blue)',
-				white: 'var(--white)',
+				'white-icon-tr': 'var(--white-icon-tr)',
 				black: 'var(--black)',
+				white: 'var(--white)',
 			},
 			keyframes: {
 				scaleAnim: {

@@ -5,7 +5,7 @@ export const EmailContactInput = ({ placeholder, value, onChange, onBlur, error 
 		<label htmlFor={''} className='sr-only' />
 		<input
 			type='email'
-			className={`${error ? 'border-red-500' : 'border-[var(--white-icon-tr)]'} bg-[var(--black)] block w-full max-w-lg rounded-lg border-2 px-4 py-4 text-sm text-[var(--white)] focus:outline-none focus:ring-2 focus:ring-[var(--blue)`}
+			className={`${error ? 'border-red-500' : 'border-[var(--white-icon-tr)]'} input-field`}
 			value={value}
 			onChange={onChange}
 			onBlur={onBlur}

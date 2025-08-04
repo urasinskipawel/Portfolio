@@ -1,4 +1,4 @@
-import type { FieldErrors } from "react-hook-form";
+import type { FieldErrors } from 'react-hook-form';
 
 export interface Icon {
 	label: string;
@@ -37,6 +37,7 @@ export interface ContactFormInputs {
 	fullName: string;
 	email: string;
 	message: string;
+	subject: string;
 }
 
 export interface InputProps {
