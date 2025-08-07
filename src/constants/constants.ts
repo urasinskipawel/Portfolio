@@ -88,30 +88,34 @@ export const specializations: Specialization[] = [
 export const projects: Project[] = [
 	{
 		title: 'Restflow Page',
-		image: '',
+		image: './images/restflowpage.png',
 		link: 'https://github.com/urasinskipawel/Restflow-Page',
-		describe: 'https://movies-for-devs.vercel.app',
+		describe:
+			'Restflow Page is a modern company website designed for the RestFlow restaurant management system. It features a clean, responsive layout and focuses on presenting the product and its key benefits in a clear and professional way.',
 		technologies: ['test'],
 	},
 	{
 		title: 'Hotel App',
-		image: '',
+		image: './images/hotelapp.png',
 		link: 'https://github.com/urasinskipawel/PoC-Hotel-App',
-		describe: 'https://stockin-demo.vercel.app',
+		describe:
+			'A mobile app prototype designed for hotel management staff. It enables easy monitoring and coordination of room status across the hotel in a clear and intuitive interface. The app focuses on usability and efficient daily operations.',
 		technologies: ['test'],
 	},
 	{
 		title: 'Production Management App',
-		image: '',
+		image: './images/productionapp.png',
 		link: 'https://github.com/urasinskipawel/Production-Management-App',
-		describe: 'https://svgl.app',
+		describe:
+			'A professional marketing‑style site built for a production planning and reporting platform. It highlights key functionality such as scheduling, inventory control, and reporting, all wrapped in a modern, business‑focused interface ',
 		technologies: ['test'],
 	},
 	{
-		title: 'MegaK-Head-Hunter-Front',
-		image: '',
+		title: 'MegaK Head Hunter',
+		image: './images/megak.png',
 		link: 'https://github.com/xyashino/MegaK-Head-Hunter-Front',
-		describe: 'https://tron-legacy-web.vercel.app/',
+		describe:
+			'A modern front‑end interface created for the MegaK Head Hunter recruitment platform. The design emphasizes clean visuals and intuitive navigation, ideal for showcasing candidate search tools and employer offerings',
 		technologies: ['test'],
 	},
 	// 	{
