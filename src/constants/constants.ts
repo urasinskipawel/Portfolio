@@ -133,17 +133,27 @@ export const footerDetails: FooterDetail[] = [
 		name: 'Astro',
 		icon: '/svg/astro.svg',
 		alt: 'Astro Logo',
+		url: 'https://astro.build',
+	},
+	{
+		desc: 'Integration with',
+		name: 'React',
+		icon: '/svg/react.svg',
+		alt: 'React Logo',
+		url: 'https://react.dev',
 	},
 	{
 		desc: 'Styled with',
 		name: 'TailwindCSS',
 		icon: '/svg/tailwind.svg',
 		alt: 'TailwindCSS Logo',
+		url: 'https://tailwindcss.com',
 	},
 	{
 		desc: 'Deployed on',
 		name: 'Vercel',
 		icon: '/svg/vercel.svg',
 		alt: 'Vercel Logo',
+		url: 'https://vercel.com',
 	},
 ];

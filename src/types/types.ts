@@ -31,6 +31,7 @@ export interface FooterDetail {
 	name: string;
 	icon: string;
 	alt: string;
+	url: string;
 }
 
 export interface ContactFormInputs {

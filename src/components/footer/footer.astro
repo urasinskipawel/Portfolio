@@ -21,11 +21,15 @@ import { footerDetails, socialLinks } from '@/constants/constants';
 			<div class='flex flex-col items-center space-y-6'>
 				<div class='grid grid-cols-1 gap-3 w-full max-w-xs'>
 					{
-						footerDetails.map(({ desc, name, icon, alt }) => (
+						footerDetails.map(({ desc, name, icon, alt, url }) => (
 							<div class='flex items-center justify-center lg:justify-normal space-x-3'>
 								<span class='text-[var(--white-icon)] text-sm'>{desc}</span>
 								<img src={icon} alt={alt} class='h-5 w-5 object-contain filter brightness-0 invert opacity-50' loading='lazy' />
-								<span class='text-[var(--white-icon)] text-sm'>{name}</span>
+								<span class='text-[var(--white-icon)] text-sm'>
+									<a href={url} target='_blank'>
+										{name}
+									</a>
+								</span>
 							</div>
 						))
 					}
