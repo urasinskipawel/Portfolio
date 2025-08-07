@@ -1,6 +1,6 @@
 ---
 import { projects, socialLinks } from '@/constants/constants';
-import { IconGithub } from '@/icons/icons';
+import { IconGithub, TagIcon } from '@/icons/icons';
 ---
 
 <section id='projects' class='py-12 border-t border-[var(--line)] text-[var(--white)]'>
@@ -19,6 +19,25 @@ import { IconGithub } from '@/icons/icons';
 								/>
 							</div>
 						</a>
+						<div class='flex flex-col  px-4'>
+							<div class='flex items-center border-5 border-red-500'>
+								<div class='flex-grow'>
+									<h3 class='text-2xl font-semibold'>{project.title}</h3>
+									<span class='py-1 text-sm text-[var(--white-icon)]'>{''}</span>
+								</div>
+								<div class='flex gap-2 ml-auto'>
+									<a
+										target='_blank'
+										href={project.link}
+										aria-label='GitHub'
+										class='size-14 flex justify-center items-center text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-1 border-[var(--white-icon-tr)] p-3 rounded-xl bg-[#1414149c] hover:bg-[var(--white-icon-tr)]'>
+										<TagIcon />
+									</a>
+								</div>
+							</div>
+							<div class='flex flex-col py-2' />
+							<p class='text-sm '>{project.describe}</p>
+						</div>
 					</div>
 				))
 			}
