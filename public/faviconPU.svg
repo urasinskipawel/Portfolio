@@ -1,0 +1,12 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Favicon PU Tag Gradient">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#444"></stop>
+      <stop offset="100%" stop-color="#bbb"></stop>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="url(#grad)"></circle>
+  <text x="32" y="40" text-anchor="middle" font-family="monospace, monospace" font-size="18" fill="#eee" font-weight="bold">
+    &lt;PU/&gt;
+  </text>
+</svg>

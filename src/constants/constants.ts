@@ -85,21 +85,7 @@ export const specializations: Specialization[] = [
 		icon: DesignIcon,
 	},
 ];
-// 'astro',
-// 'next',
-// 'react',
-// 'reactNative',
-// 'expo',
-// 'typeScript',
-// 'HTML5',
-// 'CSS3',
-// 'tailwind',
-// 'javaScript',
-// 'node',
-// 'express',
-// 'git',
-// 'firebase',
-// 'mysql',
+
 export const projects: Project[] = [
 	{
 		title: 'Restflow Page',
