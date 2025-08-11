@@ -53,11 +53,12 @@ export const technologies = [
 	'reactNative',
 	'expo',
 	'typeScript',
-	'tailwind',
 	'HTML5',
 	'CSS3',
+	'tailwind',
 	'javaScript',
 	'node',
+	'express',
 	'git',
 	'firebase',
 	'mysql',
@@ -84,7 +85,21 @@ export const specializations: Specialization[] = [
 		icon: DesignIcon,
 	},
 ];
-
+// 'astro',
+// 'next',
+// 'react',
+// 'reactNative',
+// 'expo',
+// 'typeScript',
+// 'HTML5',
+// 'CSS3',
+// 'tailwind',
+// 'javaScript',
+// 'node',
+// 'express',
+// 'git',
+// 'firebase',
+// 'mysql',
 export const projects: Project[] = [
 	{
 		title: 'Restflow Page',
@@ -92,7 +107,7 @@ export const projects: Project[] = [
 		link: 'https://github.com/urasinskipawel/Restflow-Page',
 		describe:
 			'Restflow Page is a modern company website designed for the RestFlow restaurant management system. It features a clean, responsive layout and focuses on presenting the product and its key benefits in a clear and professional way.',
-		technologies: ['test'],
+		technologies: ['react', 'typeScript', 'rhf', 'astro', 'tailwind'],
 	},
 	{
 		title: 'Hotel App',
@@ -100,7 +115,7 @@ export const projects: Project[] = [
 		link: 'https://github.com/urasinskipawel/PoC-Hotel-App',
 		describe:
 			'A mobile app prototype designed for hotel management staff. It enables easy monitoring and coordination of room status across the hotel in a clear and intuitive interface. The app focuses on usability and efficient daily operations.',
-		technologies: ['test'],
+		technologies: ['react', 'typeScript', 'rhf', 'materialUI', 'CSS3'],
 	},
 	{
 		title: 'Production Management App',
@@ -108,7 +123,7 @@ export const projects: Project[] = [
 		link: 'https://github.com/urasinskipawel/Production-Management-App',
 		describe:
 			'A professional marketing‑style site built for a production planning and reporting platform. It highlights key functionality such as scheduling, inventory control, and reporting, all wrapped in a modern, business‑focused interface ',
-		technologies: ['test'],
+		technologies: ['node', 'express', 'typeScript', 'HTML5', 'CSS3'],
 	},
 	{
 		title: 'MegaK Head Hunter',
@@ -116,15 +131,8 @@ export const projects: Project[] = [
 		link: 'https://github.com/xyashino/MegaK-Head-Hunter-Front',
 		describe:
 			'A modern front‑end interface created for the MegaK Head Hunter recruitment platform. The design emphasizes clean visuals and intuitive navigation, ideal for showcasing candidate search tools and employer offerings',
-		technologies: ['test'],
+		technologies: ['react', 'typeScript', 'node', 'HTML5', 'CSS3'],
 	},
-	// 	{
-	// 	title: 'Star Wars Universe',
-	// 	image: '',
-	// 	link: 'https://github.com/urasinskipawel/Star-Wars-Universe',
-	// 	describe: 'https://tron-legacy-web.vercel.app/',
-	// 	technologies: ['test'],
-	// },
 ];
 
 export const footerDetails: FooterDetail[] = [
@@ -136,11 +144,18 @@ export const footerDetails: FooterDetail[] = [
 		url: 'https://astro.build',
 	},
 	{
-		desc: 'Integration with',
+		desc: 'Enhanced by',
 		name: 'React',
 		icon: '/svg/react.svg',
 		alt: 'React Logo',
 		url: 'https://react.dev',
+	},
+	{
+		desc: 'Supported by',
+		name: 'TypeScript',
+		icon: '/svg/typeScriptBlack.svg',
+		alt: 'TypeScript logo',
+		url: 'https://www.typescriptlang.org/',
 	},
 	{
 		desc: 'Styled with',

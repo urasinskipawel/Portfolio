@@ -6,7 +6,7 @@ import { IconGithub, TagIcon } from '@/icons/icons';
 <section id='projects' class='py-12 border-t border-[var(--line)] text-[var(--white)]'>
 	<div class='max-w-5xl mx-auto'>
 		<h2 class='text-4xl md:text-5xl font-medium mb-8'>Projects</h2>
-		<div class='grid grid-cols-1 md:grid-cols-2 gap-8'>
+		<div class='grid grid-cols-1 md:grid-cols-2 gap-12'>
 			{
 				projects.map(project => (
 					<div>
@@ -37,6 +37,11 @@ import { IconGithub, TagIcon } from '@/icons/icons';
 							</div>
 							<div class='flex flex-col py-2' />
 							<p class='text-sm '>{project.describe}</p>
+							<div class='flex pt-4 gap-4'>
+								{project.technologies.map(tech => (
+									<img src={`/svg/${tech}.svg`} alt={tech} class='h-5 w-auto' />
+								))}
+							</div>
 						</div>
 					</div>
 				))
